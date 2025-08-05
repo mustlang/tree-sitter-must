@@ -1,0 +1,40 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "must",
+      "camelcase": "Must",
+      "title": "Must",
+      "scope": "source.must",
+      "file-types": [
+        "mst"
+      ],
+      "injection-regex": "^must$",
+      "class-name": "TreeSitterMust"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Must grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Dominik Muc",
+        "email": "git@dominikmuc.dev",
+        "url": "https://dominikmuc.dev/"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/mustlang/tree-sitter-must"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
